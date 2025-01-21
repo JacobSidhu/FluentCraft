@@ -1,0 +1,240 @@
+:root{
+    --background-color: #0e2835;
+    --on-background-text-color: #dcdcdc;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    background-color: var(--background-color);
+    flex-direction: column;
+    transition: all 0.5s ease;
+}
+
+.top-nav-bar{
+    display: flex;
+    background-color: var(--background-color);
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    align-content: center;
+    height: 7vh;
+    padding: 1vh;
+    width: 100%;
+}
+
+.top-nav-bar #left{
+    color: var(--on-background-text-color);
+    flex: 3;
+    display: flex;
+}
+.top-nav-bar #right{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex: 7;
+}
+
+.icon-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: var(--on-background-text-color);
+    font-size: 3.0vh;
+    width: 5.0vh;
+    height: 5.0vh;
+    transition: all 0.1s ease;
+}
+
+.logo-name{
+    cursor: pointer;
+    display: flex;
+    padding: 2vh;
+    justify-content: start;
+    align-items: center;
+    font-size: 3.0vh;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 5.0vh;
+    width: 100%;
+}
+
+.version-drpdwn-btn{
+    height: 5.0vh;
+    width: 100%;
+    padding: 2.0vh;
+    display: flex;
+    gap: 1.0vh;
+    justify-content: end;
+    align-items: center;
+}
+
+.drpdwn-btn-header{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #d0d0d0;
+    font-weight: 400;
+}
+
+.drpdwn-btn{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 4.0vh;
+    padding-left: 2.0vh;
+    padding-left: 2.0vh;
+    font-size: 2.5vh;
+    height: 4.0vh;
+    width: 18.0vh;
+    color: #d0d0d0;
+    border-radius: 1.0vh;
+    border: 0.5px solid #d0d0d0;
+}
+
+.circular-avator{
+    border: 0.5px solid #0C1617;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    border-radius: 100%;
+    width: 5vh;
+    color: rgb(30, 32, 33);
+    background-color: aliceblue;
+}
+
+/*--Layout 2 styling--*/
+
+.content-body{
+    height: 93.0vh;
+    display: flex;
+}
+
+.side-bar-closed{
+    width: 7.0vh;
+    height: 100%;
+    display: none;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.side-bar-closed .side-bar-top{
+    width: inherit;
+    height: inherit;
+    padding: 2.0vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    gap: 3.0vh;
+}
+
+.side-bar-closed .side-bar-bottom{
+    padding: 2.0vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.side-bar-closed .icon-wrapper:hover{
+    color: rgb(231, 231, 231);
+    border-radius: 8px;
+    background-color: #091111;
+}
+
+.page-view{
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    align-content: end;
+    background-color: #0c161b;
+    height: 93.0vh;
+    width: 100%;
+    border-radius: 4.0vh 4.0vh 0.0vh 0.0vh;
+    transition: all 0.5s ease;
+    margin-right: 1.0vw;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+.side-bar-opened{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   width: 20%;
+   height: 89.0vh;
+   margin: 2.0vh;
+}
+
+.side-bar-opened .side-bar-top{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 1.0vh;
+    width: 100%;
+    height: 100%;
+}
+
+.side-bar-opened .side-bar-bottom{
+    height: 8.0vh;
+    width: 100%;
+}
+
+.nav-btn-cntr{
+    display: flex;
+    padding: 1.0vw 1.0vw 1.0vw 2.0vw;
+    justify-content: start;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.0vh;
+    gap: 1.0vh;
+    height: 7.0vh;
+    color: #ababab;
+    transition: all 0.3s ease-in-out;
+    border-radius: 1.0vh;
+}
+
+.nav-btn-cntr:hover{
+    background-color:#101c1e;
+    color: #dbdbdb;
+}
+
+iframe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+
+.logo{
+    color: #DADADA;
+    font-family: sans-serif;
+    font-size: 28.0vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.logo #logo-fluent{
+    position: relative;
+    right: -25px;
+    text-shadow: 0px 0px 100px #00B3AA;
+}
+
+.logo #logo-craft{
+    position: relative;
+    left: -25px;
+    text-shadow: 0px 0px 100px #B20480;
+}
