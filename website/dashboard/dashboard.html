@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Layout 1 -->
+     <div class="top-nav-bar">
+        <div id="left">
+            <div class="icon-wrapper">
+                <i class="fa-solid fa-bars menu-icon"></i>
+            </div>
+            <div class="logo-name">FluentCraft</div>
+        </div>
+        <div id="right">
+            <div class="version-drpdwn-btn">
+                <div class="drpdwn-btn-header">version:</div>
+                <div class="drpdwn-btn">
+                    <div class="drpdwn-btn-label"><i>v_1.0.0</i></div>
+                    <i class="fa-solid fa-caret-down"></i>
+                </div>
+            </div>
+            <div class="circular-avator">J</div>
+        </div>
+     </div>
+
+    <!-- Layout 1 -->
+    <div class="content-body">
+        <div class="side-bar-closed">
+                <div class="side-bar-top">
+                    <a class="nav-btn-link" data-target="../home/home.html"><div class="icon-wrapper" ><i class="fa-solid fa-house"></i></div></a>
+                    <a class="nav-btn-link" data-target="../components/components.html"><div class="icon-wrapper" ><i class="fa-brands fa-square-web-awesome"></i></div></a>
+                    <a class="nav-btn-link" data-target="../documents/documents.html"><div class="icon-wrapper" ><i class="fa-solid fa-book"></i></div></a>
+                    <a class="nav-btn-link" data-target="../download/download.html"><div class="icon-wrapper" ><i class="fa-solid fa-download"></i></div></a>
+                    <a class="nav-link" target="_blank" href="https://github.com/JacobSidhu/FluentCraft"><div class="icon-wrapper" ><i class="fa-brands fa-github"></i></div></a>
+                    <a class="nav-btn-link" data-target="../support/support.html"><div class="icon-wrapper" ><i class="fa-solid fa-headset"></i></div></a>
+                </div>
+                <div class="side-bar-bottom">
+                    <a class="nav-btn-link" data-target="../settings/settings.html"><div class="icon-wrapper" ><i class="fa-solid fa-headset"></i></div></a>
+                </div>
+        </div>
+        <div class="side-bar-opened">
+                <div class="side-bar-top">
+                    <a class="nav-btn-link" id="home-page-link" data-target="../home/home.html">
+                        <div class="nav-btn-cntr">
+                            <div class="icon-wrapper" id="home-icon">
+                                <i class="fa-solid fa-house"></i>
+                            </div>
+                            <div class="home-page-btn-label" id="home-btn">Home</div>
+                        </div>
+                    </a>
+
+                    <a class="nav-btn-link" id="components-page-link" data-target="../components/components.html">
+                        <div class="nav-btn-cntr">
+                            <div class="icon-wrapper" id="component-icon">
+                                <i class="fa-brands fa-square-web-awesome"></i>
+                            </div>
+                            <div class="component-page-btn-label" id="component-btn">Components</div>
+                        </div>
+                    </a>
+
+                    <a class="nav-btn-link" id="document-page-link" data-target="../documents/documents.html">
+                        <div class="nav-btn-cntr">
+                            <div class="icon-wrapper" id="documents-icon">
+                                <i class="fa-solid fa-book"></i>
+                            </div>
+                            <div class="document-page-btn-label" id="document-btn">ApiDocs</div>
+                        </div>
+                    </a>
+
+                    <a class="nav-btn-link" id="home-page-link" data-target="../download/download.html">
+                        <div class="nav-btn-cntr">
+                            <div class="icon-wrapper" id="download-icon">
+                                <i class="fa-solid fa-download"></i>
+                            </div>
+                            <div class="download-page-btn-label" id="download-btn">Download</div>
+                        </div>
+                    </a>
+
+                    <a class="nav-link" href="https://github.com/JacobSidhu/FluentCraft"  target="_blank">
+                        <div class="nav-btn-cntr">
+                            <div class="icon-wrapper" id="github-icon">
+                                <i class="fa-brands fa-github"></i>
+                            </div>
+                            <div class="github-page-btn-label" id="github-btn">GitHub</div>
+                        </div>
+                    </a>
+
+                    <a class="nav-btn-link" id="home-page-link" data-target="../support/support.html">
+                        <div class="nav-btn-cntr">
+                            <div class="icon-wrapper" id="headset-icon">
+                                <i class="fa-solid fa-headset"></i>
+                            </div>
+                            <div class="headset-page-btn-label" id="support-btn">Support</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="side-bar-bottom">
+                    <a class="nav-btn-link" id="home-page-link" data-target="../settings/settings.html">
+                        <div class="nav-btn-cntr">
+                            <div class="icon-wrapper" id="settings-icon">
+                                <i class="fa-solid fa-gear"></i>
+                            </div>
+                            <div class="settings-page-btn-label" id="settings-btn">Settings</div>
+                        </div>
+                    </a>
+                </div>
+        </div>
+        <div class="page-view">
+            <iframe src="../home/home.html" frameborder="0"></iframe>
+        </div>
+    </div>
+
+    <script src="dashboard_script.js"></script>
+</body>
+</html>
